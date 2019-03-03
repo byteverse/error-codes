@@ -10,7 +10,7 @@ author: Andrew Martin
 maintainer: andrew.thaddeus@gmail.com
 copyright: 2019 Andrew Martin
 category: System
-extra-source-files: CHANGELOG.md
+extra-source-files: README.md
 
 library
   exposed-modules:
