@@ -1,6 +1,6 @@
 cabal-version: 2.2
 name: error-codes
-version: 0.1.0.0
+version: 0.1.0.1
 synopsis: Error code functions
 homepage: https://github.com/andrewthad/error-codes
 bug-reports: https://github.com/andrewthad/error-codes/issues
