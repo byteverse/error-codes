@@ -5,16 +5,18 @@ module Foreign.C.Error.Describe
   , byteArray
   ) where
 
-import Data.Char (ord,chr)
-import Data.Primitive (SmallArray,UnliftedArray,ByteArray(..))
-import Data.Word (Word8)
-import Foreign.C.Types (CInt)
-import Foreign.C.Error (Errno(..))
-import Data.Foldable (for_)
 import Control.Monad.ST (runST)
+import Data.Char (ord,chr)
+import Data.Foldable (for_)
+import Data.Primitive (SmallArray,ByteArray(..))
+import Data.Primitive.Unlifted.Array (UnliftedArray)
+import Data.Word (Word8)
+import Foreign.C.Error (Errno(..))
+import Foreign.C.Types (CInt)
 import qualified Data.Primitive as PM
-import qualified GHC.Exts as E
+import qualified Data.Primitive.Unlifted.Array as PM
 import qualified Foreign.C.Error as ERR
+import qualified GHC.Exts as E
 
 unErrno :: Errno -> CInt
 unErrno (Errno i) = i
