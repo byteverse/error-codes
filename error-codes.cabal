@@ -1,6 +1,6 @@
 cabal-version: 2.2
 name: error-codes
-version: 0.1.0.1
+version: 0.1.1.0
 synopsis: Error code functions
 homepage: https://github.com/andrewthad/error-codes
 bug-reports: https://github.com/andrewthad/error-codes/issues
@@ -15,6 +15,7 @@ extra-source-files: README.md
 library
   exposed-modules:
     Foreign.C.Error.Describe
+    Foreign.C.Error.Pattern
   build-depends:
     , base >=4.11.1 && <5
     , primitive >=0.7 && < 0.10
