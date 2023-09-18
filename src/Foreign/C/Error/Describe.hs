@@ -258,4 +258,5 @@ codes = E.fromList
   , {- 131 -} Description 131 (asBytes "ENOTRECOVERABLE") (asBytes "State not recoverable")
   , {- 132 -} Description 132 (asBytes "ERFKILL") (asBytes "Operation not possible due to RF-kill")
   , {- 133 -} Description 133 (asBytes "EHWPOISON") (asBytes "Memory page has hardware error")
+  , {- 254 -} Description 254 (asBytes "EEOI") (asBytes "End of input")
   ]

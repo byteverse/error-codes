@@ -102,6 +102,8 @@ module Foreign.C.Error.Pattern
   , pattern EUSERS
   , pattern EWOULDBLOCK
   , pattern EXDEV
+    -- * Non-Linux error code
+  , pattern EEOI
   ) where
 
 import Foreign.C.Error (Errno(Errno))
@@ -308,3 +310,7 @@ pattern EWOULDBLOCK :: Errno
 pattern EWOULDBLOCK = Errno (CONST_EWOULDBLOCK)
 pattern EXDEV :: Errno
 pattern EXDEV = Errno (CONST_EXDEV)
+
+-- Non-Linux error code
+pattern EEOI :: Errno
+pattern EEOI = Errno 254
