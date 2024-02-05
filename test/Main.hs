@@ -1,4 +1,3 @@
-import Control.Monad (when)
 import Foreign.C.Error
 
 import qualified Foreign.C.Error.Describe as D
@@ -19,4 +18,3 @@ stringMatch ident e expected = do
   if actual == expected
     then pure ()
     else fail $ ident ++ ": expected " ++ expected ++ " but got " ++ actual
-  
