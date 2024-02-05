@@ -102,11 +102,12 @@ module Foreign.C.Error.Pattern
   , pattern EUSERS
   , pattern EWOULDBLOCK
   , pattern EXDEV
+
     -- * Non-Linux error code
   , pattern EEOI
   ) where
 
-import Foreign.C.Error (Errno(Errno))
+import Foreign.C.Error (Errno (Errno))
 
 #include "HsBaseConfig.h"
 
@@ -269,7 +270,7 @@ pattern EPROGUNAVAIL = Errno (CONST_EPROGUNAVAIL)
 pattern EPROTO :: Errno
 pattern EPROTO = Errno (CONST_EPROTO)
 pattern EPROTONOSUPPORT :: Errno
-pattern EPROTONOSUPPORT=Errno (CONST_EPROTONOSUPPORT)
+pattern EPROTONOSUPPORT = Errno (CONST_EPROTONOSUPPORT)
 pattern EPROTOTYPE :: Errno
 pattern EPROTOTYPE = Errno (CONST_EPROTOTYPE)
 pattern ERANGE :: Errno
@@ -287,7 +288,7 @@ pattern ERREMOTE = Errno (CONST_ERREMOTE)
 pattern ESHUTDOWN :: Errno
 pattern ESHUTDOWN = Errno (CONST_ESHUTDOWN)
 pattern ESOCKTNOSUPPORT :: Errno
-pattern ESOCKTNOSUPPORT=Errno (CONST_ESOCKTNOSUPPORT)
+pattern ESOCKTNOSUPPORT = Errno (CONST_ESOCKTNOSUPPORT)
 pattern ESPIPE :: Errno
 pattern ESPIPE = Errno (CONST_ESPIPE)
 pattern ESRCH :: Errno
