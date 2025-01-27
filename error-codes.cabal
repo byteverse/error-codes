@@ -33,7 +33,7 @@ library
     , base                >=4.11.1 && <5
     , bytestring          >=0.11
     , primitive           >=0.7    && <0.10
-    , primitive-unlifted  >=0.1    && <2.2
+    , primitive-unlifted  >=0.1    && <2.3
     , text                >=2.0
     , text-short          >=0.1.5
 
